@@ -57,6 +57,18 @@ button.normal{
     transition: 0.2s ease;
 }
 
+button.white{
+    font-size: 13px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: #fff;
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
 body {
     width: 100%;
 }
@@ -310,4 +322,92 @@ svg {
 #banner button:hover{
     background-color: #088178;
     color: #fff;
+}
+
+/* Text Banner Styling  */
+#sm-banner{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/banner/b17.jpg);
+    min-width: 850px;
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+}
+#sm-banner .banner-box2{
+    background: url(images/banner/b10.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight:500;
+}
+#sm-banner h2{
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
+}
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom:15px ;
+}
+#sm-banner .banner-box:hover button{
+    background-color: #088178;
+    border: 1px solid #088178;
+}
+#banner3{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 80px;
+}
+#banner3 .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background: url(images/banner/b7.jpg);
+    min-width: 32%;
+    height: 30vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+#banner3 .banner-box2{
+    background: url(images/banner/b4.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banner3 .banner-box3{
+    background: url(images/banner/b18.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#banner3 h2{
+    color: #fff;
+    font-size: 24px;
+    font-weight: 900;
+}
+#banner3 h3{
+    color: #ef3636;
+    font-size: 17px;
+    font-weight: 800;
 }
