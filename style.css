@@ -570,6 +570,16 @@ footer .copyright {
 
 /* Start Media Query */
 @media (max-width:799px) {
+    body.overlay #header::before{
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
+    }
 
     .section-p1 {
         padding: 40px 40px;
@@ -762,4 +772,37 @@ footer .copyright {
     footer .col:nth-child(3){
         width: 30%;
     }
+}
+
+/* Shop Page Css Code Start */
+#page-header{
+    background-image: url("images/banner/b1.jpg");
+    height: 40vh;
+    width: 100%;
+    margin-top: 81px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    background-size: cover;
+}
+#page-header h2,
+#page-header p{
+    color: #fff;
+}
+
+#pagination{
+    text-align: center;
+}
+#pagination a{
+    text-decoration: none;
+    background-color: #088178;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+#pagination a i{
+    font-size: 16px;
 }
