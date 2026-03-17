@@ -735,6 +735,74 @@ footer .copyright {
     z-index: -9;
 }
 
+/* About Page Css code  */
+#page-header.about-header {
+    background-image: url(images/about/banner.png);
+}
+
+#about-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#about-head img {
+    width: 48%;
+    height: auto;
+}
+
+#about-head div {
+    width: 48%;
+}
+
+#about-head div p {
+    line-height: 20px;
+}
+
+#about-head .ticker {
+    width: 100%;
+    height: 25px;
+    display: flex;
+    align-items: center;
+    background-color: #ccc;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+#about-head .ticker p {
+    display: block;
+    padding-left: 102%;
+    margin-top: 23px;
+    animation: scroll 30s linear infinite;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#about-app {
+    text-align: center;
+}
+
+#about-app .video {
+    width: 70%;
+    height: 100%;
+    margin: 30px auto 0 auto;
+}
+
+#about-app .video video {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
 /* Start Media Query */
 @media (max-width:799px) {
     body.overlay #header::before {
@@ -991,4 +1059,19 @@ footer .copyright {
     #blog .blog-details {
         width: 100%;
     }
+    /* About Page  */
+    #about-head {
+        display: flex;
+        flex-direction: column;
+    }
+    #about-head img {
+    width: 100%;
+    margin-bottom: 30px;
+}
+#about-head div {
+    width: 100%;
+}
+#about-app .video {
+    width: 100%;
+}
 }
